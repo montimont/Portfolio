@@ -1,9 +1,3 @@
-"""
-Dice Rolling Simulator: Write a program that simulates rolling a dice. 
-The program should ask the user how many sides the dice has and how many times they want to roll it. 
-The program should then print out the results of each roll.
-"""
-
 import random
 
 print("""
