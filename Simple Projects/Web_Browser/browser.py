@@ -3,12 +3,12 @@ from PyQt6.QtGui import *
 from PyQt6.QtCore import *
 from PyQt6.QtWebEngineWidgets import *
 
-class MyWebBrowser(QMainWindow):
+class WebBrowser(QMainWindow):
     def __init__(self, *args, **kwargs):
-        super(MyWebBrowser, self).__init__(*args, **kwargs)
+        super(WebBrowser, self).__init__(*args, **kwargs)
 
         self.window = QWidget()
-        self.window.setWindowTitle('My Web Browser')
+        self.window.setWindowTitle('Simple Web Browser')
 
         self.layout = QVBoxLayout()
         self.horizontal = QHBoxLayout()
@@ -62,5 +62,5 @@ class MyWebBrowser(QMainWindow):
             self.browser.setUrl(QUrl(url))
 
 app = QApplication([])
-window = MyWebBrowser()
+window = WebBrowser()
 app.exec()
