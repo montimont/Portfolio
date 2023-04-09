@@ -1,0 +1,1 @@
+I chose to use Python code to create a game of Rock, Paper, Scissors, Match, Phoenix, and Scientist because of the advantages of Python's object-oriented programming. It is easy to create flexible and extensible code that can handle the complex rules of this game. I added a picture to this folder to show the rules of a the game.
