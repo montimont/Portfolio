@@ -4,7 +4,6 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-# Retrieve the news headlines from NPR
 url = 'https://www.npr.org/sections/news/'
 response = requests.get(url)
 html_content = response.content
@@ -13,12 +12,10 @@ soup = BeautifulSoup(html_content, 'html.parser')
 articles = soup.find_all('article', class_='item')
 headlines = [article.h2.a.text.strip() for article in articles]
 
-# Print the news headlines to the console
 print('NPR News Headlines:')
 for headline in headlines:
     print('- ' + headline)
 
-# Send an email with the news headlines to a specified email address
 from_address = 'your_email_address@example.com'
 to_address = 'recipient_email_address@example.com'
 subject = 'NPR News Headlines'
