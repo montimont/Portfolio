@@ -1,0 +1,1 @@
+I created an Eisenhower Matrix using the tkinter package in Python. The Matrix is something that I use in real-life to stay organized, so it would be fun to push my abilities a bit using Python. The Matrix using a GUI allows the user to have a visual representation to identify tasks that can be delegated or eliminated.
