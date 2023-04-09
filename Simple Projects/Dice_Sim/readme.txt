@@ -1,0 +1,1 @@
+I used Python code to create a Dice Rolling Simulator, Coin Flipper, and Number Guess game. This code will enable the user to simulate the rolling of a dice with a variable number of sides and rolls, the flipping of a coin with a variable number of flips, and a number guess game with five attempts to guess a number between 1 and 50. 
