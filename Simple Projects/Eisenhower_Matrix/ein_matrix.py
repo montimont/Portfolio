@@ -8,14 +8,11 @@ class EisenhowerMatrix:
         self.master = master
         master.title("Eisenhower Matrix")
 
-        # grid layout
         self.grid = Frame(master)
         self.grid.grid(row=0, column=0, sticky=N+S+E+W)
 
-        # task list
         self.tasks = []
 
-        # matrix labels
         important_urgent_label = Label(self.grid, text="Urgent")
         important_urgent_label.grid(row=0, column=1, padx=10, pady=10)
         important_not_urgent_label = Label(self.grid, text="Not Urgent")
@@ -25,7 +22,6 @@ class EisenhowerMatrix:
         not_important_not_urgent_label = Label(self.grid, text="Not Important")
         not_important_not_urgent_label.grid(row=2, column=0, padx=10, pady=10)
 
-        # task entry and add button
         self.task_entry = Entry(self.grid)
         self.task_entry.grid(row=3, column=0, columnspan=3, sticky=N+S+E+W)
 
@@ -44,7 +40,6 @@ class EisenhowerMatrix:
         toggle_strikethrough_task_button = Button(self.grid, text="Strike Task", command=self.toggle_strikethrough)
         toggle_strikethrough_task_button.grid(row=6, column=2, padx=10, pady=10)
 
-        # list labels
         self.important_urgent_tasks = Label(self.grid, text=" ", bg="green")
         self.important_urgent_tasks.grid(row=1, column=1, padx=10, pady=10, sticky=N+S+E+W)
 
@@ -62,17 +57,13 @@ class EisenhowerMatrix:
         label_text = self.label_menu.get()
 
         if task_text:
-            # check for duplicate tasks
             for i, task in enumerate(self.tasks):
-                if task[0] == task_text:  # fix variable name here
-                    # Remove the task if it already exists
+                if task[0] == task_text:
                     self.tasks.pop(i)
-                    break  # exit the loop if task is found
-            # adding new tasks
+                    break
             self.tasks.append((task_text, label_text))
             self.task_entry.delete(0, END)
 
-            # updating task list
             self.important_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Important/Urgent"]))
             self.important_not_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Important/Not Urgent"]))
             self.not_important_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Not Important/Urgent"]))
@@ -85,7 +76,6 @@ class EisenhowerMatrix:
             self.tasks = [(task, label) for task, label in self.tasks if task != task_text]
             self.task_entry.delete(0, END)
 
-            # updating task list
             self.important_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Important/Urgent"]))
             self.important_not_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Important/Not Urgent"]))
             self.not_important_urgent_tasks.config(text="\n".join([task[0] for task in self.tasks if task[1] == "Not Important/Urgent"]))
@@ -94,12 +84,11 @@ class EisenhowerMatrix:
 
     def toggle_strikethrough(self):
         task_text = self.task_entry.get()
-        if "\u0336" in task_text:  # Check if there's already a strikethrough in the text
-            new_text = task_text.replace("\u0336", "")  # Remove existing strikethrough
+        if "\u0336" in task_text:
+            new_text = task_text.replace("\u0336", "")
         else:
-            new_text = "\u0336".join(task_text)  # Add a strikethrough to each character in the text
+            new_text = "\u0336".join(task_text)
 
-        # updating task list
         for i, task in enumerate(self.tasks):
             if task[0] == task_text:
                 self.tasks[i] = (new_text, task[1])
