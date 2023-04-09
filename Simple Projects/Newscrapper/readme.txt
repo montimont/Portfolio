@@ -1,0 +1,1 @@
+I created a Python code newscrapper for NPR because it is one of my favorite news outlets, along with Bloomberg. I added an emailer component to send emails to users so they can receive their news updates conveniently. I removed my personal email from the code to protect the user's privacy. I used the request, BeautifulSoup, and smtplib packages to create this program.
