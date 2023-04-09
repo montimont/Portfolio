@@ -1,6 +1,3 @@
-# """
-# Currency Converter: Build a program that converts one currency to another.
-
 
 print("""
 
