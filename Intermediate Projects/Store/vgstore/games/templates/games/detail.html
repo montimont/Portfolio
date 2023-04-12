@@ -1,0 +1,12 @@
+{% extends 'games/base.html' %}
+
+{% block content %}
+    <dl>
+        <dt>Title</dt>
+        <dd>{{game.title}}</dd>
+        <dt>Genre</dt>
+        <dd>{{game.genre}}</dd>
+        <dt>In Stock</dt>
+        <dd>{{game.number_in_stock}}</dd>
+    </dl>
+{% endblock  %}

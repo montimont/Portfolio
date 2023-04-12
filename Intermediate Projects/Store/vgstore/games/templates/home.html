@@ -1,0 +1,11 @@
+{% extends 'games/base.html' %}
+
+{% block content %}
+<button onclick="window.location.href='{% url 'game_index' %}'">Game Inventory</button>
+{% endblock %}
+
+{% comment %} {% extends 'base.html' %}
+
+{% block content %}
+<a href="{% url 'http://127.0.0.1:8000/games/' %}">Link to Game Detail Page</a>
+{% endblock %} {% endcomment %}

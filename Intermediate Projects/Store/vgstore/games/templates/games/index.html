@@ -1,0 +1,30 @@
+{% extends 'games/base.html' %}
+
+{% block content %}
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Platform</th>
+                <th>Stock</th>
+                <th>Publisher</th>
+                <th>Release Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for Ga in games %}
+                <tr>
+                    <td>
+                        <a href="{% url 'game_detail' Ga.id %}">{{Ga.title}}</a>
+                    </td>
+                    <td>{{Ga.genre}}</td>
+                    <td>{{Ga.platform}}</td>
+                    <td>{{Ga.number_in_stock}}</td>
+                    <td>{{Ga.publisher}}</td>
+                    <td>{{Ga.release_year}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock  %}
