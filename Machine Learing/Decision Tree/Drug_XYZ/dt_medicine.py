@@ -1,3 +1,5 @@
+### predictions
+
 import pandas as pd
 drug = pd.read_csv('drug_XYZ_2.csv')
 
@@ -10,8 +12,7 @@ predictions = model.predict([ [22, 1, 2, 2, 25.355], [50, 0, 1, 2, 9.894]])
 predictions
 
 
-
-### predictions
+### eval accuracy
 
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
@@ -28,3 +29,8 @@ model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
 score = accuracy_score(y_test, predictions)
+
+### creating viz chart
+
+joblib.dump(model, 'drug_recommendation.joblib')
+tree.export_graphviz(model, out_file='drug_recommendation.dot', feature_names=['Age',	'Sex',	'BP',	'Cholesterol',	'Na_to_K'], class_names=sorted(y.unique()), label='all', rounded =True, filled=True)
