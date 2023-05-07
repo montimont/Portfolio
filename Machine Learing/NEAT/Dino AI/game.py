@@ -10,23 +10,23 @@ SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-RUNNING = [pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Dino/DinoRun1.png")),
-           pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Dino/DinoRun2.png"))]
+RUNNING = [pygame.image.load(os.path.join("/Dino AI/Assets/Dino/DinoRun1.png")),
+           pygame.image.load(os.path.join("/Dino AI/Assets/Dino/DinoRun2.png"))]
 
 JUMPING = pygame.image.load(os.path.join(
-    "/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Dino/DinoJump.png"))
+    "/Dino AI/Assets/Dino/DinoJump.png"))
 
-SMALL_CACTUS = [pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/SmallCactus1.png")),
+SMALL_CACTUS = [pygame.image.load(os.path.join("Dino AI/Assets/Cactus/SmallCactus1.png")),
                 pygame.image.load(os.path.join(
-                    "/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/SmallCactus2.png")),
-                pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/SmallCactus3.png"))]
-LARGE_CACTUS = [pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/LargeCactus1.png")),
+                    "/Dino AI/Assets/Cactus/SmallCactus2.png")),
+                pygame.image.load(os.path.join("/Dino AI/Assets/Cactus/SmallCactus3.png"))]
+LARGE_CACTUS = [pygame.image.load(os.path.join("/Dino AI/Assets/Cactus/LargeCactus1.png")),
                 pygame.image.load(os.path.join(
-                    "/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/LargeCactus2.png")),
-                pygame.image.load(os.path.join("/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Cactus/LargeCactus3.png"))]
+                    "/Dino AI/Assets/Cactus/LargeCactus2.png")),
+                pygame.image.load(os.path.join("/Dino AI/Assets/Cactus/LargeCactus3.png"))]
 
 BG = pygame.image.load(os.path.join(
-    "/Users/montebolds/Portofolio/Advanced/Chromo Dino AI/Assets/Other/Track.png"))
+    "/Dino AI/Assets/Other/Track.png"))
 
 FONT = pygame.font.SysFont('Georgia', 20)
 
