@@ -1,0 +1,1 @@
+This project was created for a class assignment to recreate the classic SNES game Legend of Zelda using Python and Pygames. The game is a clone of the original SNES game and is composed of several .py files. The game features a main menu, an inventory system, and level selection. The game allows the user to navigate through an overworld-like level, defeat enemies, and level up. 
