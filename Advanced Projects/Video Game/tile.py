@@ -14,5 +14,4 @@ class Tile(pygame.sprite.Sprite):
                 topleft=(pos[0], pos[1] - TILESIZE))
         else:
             self.rect = self.image.get_rect(topleft=pos)
-        # shrink y by 5 pixels on each side
         self.hitbox = self.rect.inflate(0, y_offset)
