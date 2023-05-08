@@ -6,7 +6,7 @@ from random import randint
 class MagicPlayer:
     def __init__(self, animation_player):
         self.animation_player = animation_player
-        self.sounds = {'heal': pygame.mixer.Sound('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/15 - fixes audio/audio/heal.wav'), 'flame': pygame.mixer.Sound('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/15 - fixes audio/audio/Fire.wav')
+        self.sounds = {'heal': pygame.mixer.Sound('/asset/audio/heal.wav'), 'flame': pygame.mixer.Sound('/asset/audio/Fire.wav')
                        }
 
     def heal(self, player, strength, cost, groups):
