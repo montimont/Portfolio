@@ -42,17 +42,17 @@ class level:
 
     def create_map(self):
         layouts = {'boundary': import_csv_layout(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/5 - level graphics/map/map_FloorBlocks.csv'),
+            '/asset/map/map_FloorBlocks.csv'),
             'grass': import_csv_layout(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/5 - level graphics/map/map_Grass.csv'),
+            '/asset/map/map_Grass.csv'),
             'object': import_csv_layout(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/15 - fixes audio/map/map_Objects.csv'),
-            'entities': import_csv_layout('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/10 - Enemies/map/map_Entities.csv')
+            '/asset/map/map_Objects.csv'),
+            'entities': import_csv_layout('/asset/map/map_Entities.csv')
         }
 
         graphics = {'grass': import_folder(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/5 - level graphics/graphics/Grass'),
-            'objects': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/15 - fixes audio/graphics/objects')
+            '/asset/graphics/Grass'),
+            'objects': import_folder('/asset/graphics/objects')
 
         }
 
@@ -181,7 +181,7 @@ class YSortCameraGroup(pygame.sprite.Group):
 
         # creating the floor
         self.floor_surf = pygame.image.load(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/5 - level graphics/graphics/tilemap/ground.png').convert()
+            '/asset/tilemap/ground.png').convert()
         self.floor_rect = self.floor_surf.get_rect(topleft=(0, 0))
 
     def custom_draw(self, player):
