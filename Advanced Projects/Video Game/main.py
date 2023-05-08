@@ -19,7 +19,7 @@ class Game:
 
         # sound
         main_sound = pygame.mixer.Sound(
-            '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/15 - fixes audio/audio/main.ogg')
+            '/asset/audio/main.ogg')
         main_sound.set_volume(0.5)
         main_sound.play(loops=-1)
 
