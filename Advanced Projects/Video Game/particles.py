@@ -7,49 +7,49 @@ class AnimationPlayer:
     def __init__(self):
         self.frames = {
             # magic
-            'flame': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/flame/frames'),
-            'aura': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/aura'),
-            'heal': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/heal/frames'),
+            'flame': import_folder('/asset/graphics/particles/flame/frames'),
+            'aura': import_folder('/asset/graphics/particles/aura'),
+            'heal': import_folder('/asset/graphics/particles/heal/frames'),
 
             # attacks
-            'claw': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/claw'),
-            'slash': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/slash'),
-            'sparkle': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/sparkle'),
-            'leaf_attack': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf_attack'),
-            'thunder': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/thunder'),
+            'claw': import_folder('/asset/graphics/particles/claw'),
+            'slash': import_folder('/asset/graphics/particles/slash'),
+            'sparkle': import_folder('/asset/graphics/particles/sparkle'),
+            'leaf_attack': import_folder('/asset/graphics/particles/leaf_attack'),
+            'thunder': import_folder('/asset/graphics/particles/thunder'),
 
             # monster deaths
-            'squid': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/smoke_orange'),
-            'raccoon': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/raccoon'),
-            'spirit': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/nova'),
-            'bamboo': import_folder('/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/bamboo'),
+            'squid': import_folder('/asset/graphics/particles/smoke_orange'),
+            'raccoon': import_folder('/asset/graphics/particles/raccoon'),
+            'spirit': import_folder('/asset/graphics/particles/nova'),
+            'bamboo': import_folder('/asset/graphics/particles/bamboo'),
 
             # leafs
             'leaf': (
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf1'),
+                    '/asset/graphics/particles/leaf1'),
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf2'),
+                    '/asset/graphics/particles/leaf2'),
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf3'),
+                    '/asset/graphics/particles/leaf3'),
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf4'),
+                    '/asset/graphics/particles/leaf4'),
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf5'),
+                    '/asset/graphics/particles/leaf5'),
                 import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf6'),
+                    '/asset/graphics/particles/leaf6'),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf1')),
+                    '/asset/graphics/particles/leaf1')),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf2')),
+                    '/asset/graphics/particles/leaf2')),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf3')),
+                    '/asset/graphics/particles/leaf3')),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf4')),
+                    '/asset/graphics/particles/leaf4')),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf5')),
+                    '/asset/graphics/particles/leaf5')),
                 self.reflect_image(import_folder(
-                    '/Users/montebolds/Portofolio/Advanced/Zelda Clone/Zelda-main/12 - particles/graphics/particles/leaf6'))
+                    '/asset/graphics/particles/leaf6'))
             )
         }
 
